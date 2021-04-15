@@ -64,7 +64,6 @@ class CategoryControllerTest extends TestCase
         ];
         $response = $this->assertStore(
             $data,
-            $data + ['description' => null, 'is_active' => true, 'deleted_at' => null],
             $data + ['description' => null, 'is_active' => true, 'deleted_at' => null]
         );
 
